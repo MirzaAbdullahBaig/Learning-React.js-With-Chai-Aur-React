@@ -1,8 +1,6 @@
-# React + Vite
+# Project bgChanger in React + Vite with Chai Aur Code
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+- [Background Color Changer](https://hot-colorchanger.surge.sh/) using [React](https://vite.dev/guide/)
 
-Currently, two official plugins are available:
+![image](https://github.com/user-attachments/assets/a50d038e-7a33-4503-8149-853d5fdf38c5)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
