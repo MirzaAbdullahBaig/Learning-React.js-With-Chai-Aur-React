@@ -6,3 +6,6 @@
 
 - **Project 02:** 🔐 Password Generator in React  
   🔗 [Live Demo](https://hot-password-generator.surge.sh/)
+  
+- **Project 03:** 💱 Currency Converter in React  
+  🔗 [Live Demo](https://hot-currencyconverter.surge.sh/)
