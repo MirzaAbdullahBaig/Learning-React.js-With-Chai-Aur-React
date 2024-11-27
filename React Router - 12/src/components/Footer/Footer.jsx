@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 export default function Footer() {
   return (
@@ -22,14 +22,36 @@ export default function Footer() {
               </h2>
               <ul className="text-gray-500 font-medium">
                 <li className="mb-4">
-                  <Link to="/" className="hover:underline">
+                  <NavLink
+                    to="/"
+                    className={({ isActive }) =>
+                      `${
+                        isActive ? "text-orange-700" : "text-gray-500"
+                      } hover:underline`
+                    }
+                  >
                     Home
-                  </Link>
+                  </NavLink>
+                </li>
+                <li className="mb-4">
+                  <NavLink
+                    to="/about"
+                    className={({ isActive }) =>
+                      `${
+                        isActive ? "text-orange-700" : "text-gray-500"
+                      } hover:underline`
+                    }
+                  >
+                    About
+                  </NavLink>
                 </li>
                 <li>
-                  <Link to="/about" className="hover:underline">
-                    About
-                  </Link>
+                  <NavLink
+                    to="/contact"
+                    className={({ isActive }) => `${isActive ? "text-orange-700" : "text-gray-500"} hover:underline`}
+                  >
+                    Contact
+                  </NavLink>
                 </li>
               </ul>
             </div>
@@ -39,18 +61,30 @@ export default function Footer() {
               </h2>
               <ul className="text-gray-500 font-medium">
                 <li className="mb-4">
-                  <a
-                    href="https://github.com/hiteshchoudhary"
-                    className="hover:underline"
+                  <Link
+                    to="https://github.com/MirzaAbdullahBaig/"
                     target="_blank"
-                    rel="noreferrer"
+                    className="hover:underline hover:text-orange-700"
                   >
                     Github
-                  </a>
+                  </Link>
+                </li>
+                <li className="mb-4">
+                  <Link
+                    to="https://www.linkedin.com/in/mirzaabdullahbaig0/"
+                    target="_blank"
+                    className="hover:underline hover:text-orange-700"
+                  >
+                    Linkedin
+                  </Link>
                 </li>
                 <li>
-                  <Link to="/" className="hover:underline">
-                    Discord
+                  <Link
+                    to="https://leetcode.com/u/Abdullah_Baig/"
+                    target="_blank"
+                    className="hover:underline hover:text-orange-700"
+                  >
+                    Leetcode
                   </Link>
                 </li>
               </ul>
@@ -61,12 +95,18 @@ export default function Footer() {
               </h2>
               <ul className="text-gray-500 font-medium">
                 <li className="mb-4">
-                  <Link to="#" className="hover:underline">
+                  <Link
+                    to="#"
+                    className="hover:underline hover:text-orange-700"
+                  >
                     Privacy Policy
                   </Link>
                 </li>
                 <li>
-                  <Link to="#" className="hover:underline">
+                  <Link
+                    to="#"
+                    className="hover:underline hover:text-orange-700"
+                  >
                     Terms &amp; Conditions
                   </Link>
                 </li>
@@ -77,10 +117,14 @@ export default function Footer() {
         <hr className="my-6 border-gray-200 sm:mx-auto lg:my-8" />
         <div className="sm:flex sm:items-center sm:justify-between">
           <span className="text-sm text-gray-500 sm:text-center">
-            © 2023
-            <a href="https://hiteshchoudhary.com/" className="hover:underline">
-              hiteshchoudhary
-            </a>
+            © 2024
+            <Link
+              to="https://www.linkedin.com/in/mirzaabdullahbaig0/"
+              target="_blank"
+              className="hover:underline hover:text-orange-700"
+            >
+              Mirza Abdullah Baig
+            </Link>
             . All Rights Reserved.
           </span>
           <div className="flex mt-4 space-x-5 sm:justify-center sm:mt-0">
