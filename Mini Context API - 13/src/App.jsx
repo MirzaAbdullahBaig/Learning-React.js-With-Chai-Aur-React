@@ -1,12 +1,19 @@
-import './App.css'
+import UserContextProvider from "./context/UserContextProvider";
+// import './App.css'
+import Login from "./components/Login";
+import Profile from "./components/Profile";
 
 function App() {
-
   return (
-    <>
-      <h1 className='text-3xl text-center'>Hello World</h1>
-    </>
-  )
+    <UserContextProvider>
+      <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100">
+        <div className="bg-white p-8 rounded-lg shadow-lg w-96">
+          <Login />
+          <Profile />
+        </div>
+      </div>
+    </UserContextProvider>
+  );
 }
 
-export default App
+export default App;
