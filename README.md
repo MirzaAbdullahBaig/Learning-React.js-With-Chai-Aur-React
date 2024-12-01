@@ -35,3 +35,9 @@
 ### 🌙 Project 05.02: Context API in React  
 💡 Toggle between dark and light themes using React Context API.  
 🔗 [Live Demo](https://hot-darktheme.surge.sh/)  
+
+---
+
+### ✅ Project 06: Todo App Using Context API in React  
+💡 Manage your daily tasks with a sleek Todo App using React Context API.  
+🔗 [Live Demo](https://hot-todoApp.surge.sh/)
