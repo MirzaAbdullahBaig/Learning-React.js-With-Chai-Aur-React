@@ -8,7 +8,7 @@ function Todos() {
 
   return (
     <>
-      <ul className="list-none space-y-4">
+      <ul className="list-none space-y-4 w-full">
         {todos.map((todo) => (
           <li
             key={todo.id}
