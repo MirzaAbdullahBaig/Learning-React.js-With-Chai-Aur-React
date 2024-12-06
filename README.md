@@ -41,3 +41,12 @@
 ### ✅ Project 06: Todo App Using Context API in React  
 💡 Manage your daily tasks with a sleek Todo App using React Context API.  
 🔗 [Live Demo](https://hot-todoApp.surge.sh/)
+
+---
+
+### ✅ Project 07: Todo App Using Redux Toolkit 
+💡 Manage your daily tasks with a sleek Todo App using React Context API.  
+🔗 [Live Demo](https://hot-todo.surge.sh/)
+
+---
+
