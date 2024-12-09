@@ -1,10 +1,25 @@
-import React from "react";
+import React, { useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { removeTodo, editTodo } from "../features/todo/todoSlice";
 
 function Todos() {
   const todos = useSelector((state) => state.todos);
   const dispatch = useDispatch();
+
+  // Local state for editing
+  const [editingId, setEditingId] = useState(null);
+  const [editText, setEditText] = useState("");
+
+  // Save the updated todo
+  const saveEditHandler = () => {
+    if (editText.trim() === "") {
+      alert("Todo text cannot be empty!");
+      return;
+    }
+    dispatch(editTodo({ id: editingId, text: editText }));
+    setEditingId(null);
+    setEditText("");
+  };
 
   return (
     <>
