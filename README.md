@@ -50,3 +50,6 @@
 
 ---
 
+### 📝 Mega Project: Blog App With Appwrite  
+💡 Create, manage, and organize blogs using a sleek Blog App powered by Appwrite.  
+🔗 [Live Demo](https://hot-blogapp.surge.sh/)  
